@@ -1,6 +1,6 @@
 # SUBWAY CONTROL playtest
 
-Get the playtest and Host/Join instructions from [the Sites playtest page](https://subway-control-playtest.robust-yak-2986.chatgpt.site).
+Get the playtest and Host/Join instructions from [the Sites playtest page](https://subway-control-playtest.riemann-c.chatgpt.site).
 
 The 0.2.0 release provides a native Apple silicon Mac game download (macOS 14+).
 Windows packaging and separate-device internet validation are still pending.
