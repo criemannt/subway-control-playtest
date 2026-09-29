@@ -1,15 +1,16 @@
 # SUBWAY CONTROL playtest
 
-Get the playtest and Host/Join instructions from [the Sites playtest page](https://subway-control-playtest.riemann-c.chatgpt.site).
+Open the [Sites browser lobby](https://subway-control-playtest.riemann-c.chatgpt.site/play/).
+**The streaming host is offline while the owner's Windows PC is being configured.**
 
-The 0.2.0 release provides a native Apple silicon Mac game download (macOS 14+).
-Windows packaging and separate-device internet validation are still pending.
+The planned browser flow uses a six-character room code and two separate Unreal streams.
+Testers will use a desktop browser on macOS or Windows without installing the game or a VPN.
+Windows packaging, the internet relay, actual browser input, and a separate-network match/rematch are still pending.
 
-Each player downloads the same build. Use Host Multiplayer and Join Multiplayer with the host IP:port;
-for different networks, connect the computers through Tailscale device sharing first. UDP port: 7777.
-The game's lesson teaches Q/W/E, Space, and 1/2/3. Both players can ready for a rematch after results.
+The [0.2.0 release](https://github.com/criemannt/subway-control-playtest/releases/tag/v0.2.0) remains an optional native Apple silicon Mac download (macOS 14+).
+It includes Q/W/E selection, the handwritten driver note, and the persistent grid power meter.
+For a native LAN session, both players use the same Mac build; Host Multiplayer and Join Multiplayer use the host's LAN IP and UDP port 7777.
 
-Two independently rendered packaged processes passed the connected lesson, a full match,
-and rematch on one Mac through its network address with 80 ms simulated outgoing latency.
-Both dispatched all 13 trains in both rounds and agreed on authoritative results.
-This does not verify physical devices or an internet-reachable host.
+Two rendered packaged processes completed lessons, full matches, and rematches on one Mac with 80 ms simulated outgoing latency.
+Two separate WebRTC protocol clients also received live video and isolated input from two Unreal processes on that Mac.
+These local checks do not verify actual browsers, separate physical devices, or an internet-reachable host.
